@@ -1,4 +1,4 @@
-import { A as AstroError, I as InvalidComponentArgs, a as AstroGlobUsedOutside, b as AstroGlobNoMatch, M as MissingMediaQueryDirective, N as NoMatchingImport, O as OnlyResponseCanBeReturned, c as NoMatchingRenderer, d as NoClientOnlyHint, e as NoClientEntrypoint } from './assets-service_g49DIDuq.mjs';
+import { A as AstroError, I as InvalidComponentArgs, a as AstroGlobUsedOutside, b as AstroGlobNoMatch, M as MissingMediaQueryDirective, N as NoMatchingImport, O as OnlyResponseCanBeReturned, c as NoMatchingRenderer, d as NoClientOnlyHint, e as NoClientEntrypoint } from './assets-service_HCeeQtoM.mjs';
 import 'kleur/colors';
 import { clsx } from 'clsx';
 import { escape } from 'html-escaper';
@@ -1738,15 +1738,6 @@ function renderUniqueStylesheet(result, sheet) {
 "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_".split("").reduce((v, c) => (v[c.charCodeAt(0)] = c, v), []);
 "-0123456789_".split("").reduce((v, c) => (v[c.charCodeAt(0)] = c, v), []);
 
-function __astro_tag_component__(Component, rendererName) {
-  if (!Component) return;
-  if (typeof Component !== "function") return;
-  Object.defineProperty(Component, Renderer, {
-    value: rendererName,
-    enumerable: false,
-    writable: false
-  });
-}
 function spreadAttributes(values = {}, _name, { class: scopedClassName } = {}) {
   let output = "";
   if (scopedClassName) {
@@ -1831,4 +1822,4 @@ function createVNode(type, props) {
   return vnode;
 }
 
-export { AstroJSX as A, Fragment as F, __astro_tag_component__ as _, renderScriptElement as a, createHeadAndContent as b, createComponent as c, renderTemplate as d, renderComponent as e, renderHead as f, decodeKey as g, renderJSX as h, createVNode as i, createAstro as j, addAttribute as k, renderSlot as l, maybeRenderHead as m, renderUniqueStylesheet as r, spreadAttributes as s, unescapeHTML as u };
+export { AstroJSX as A, createComponent as a, addAttribute as b, createAstro as c, renderUniqueStylesheet as d, renderScriptElement as e, createHeadAndContent as f, renderComponent as g, renderHead as h, decodeKey as i, renderJSX as j, createVNode as k, maybeRenderHead as m, renderTemplate as r, spreadAttributes as s, unescapeHTML as u };
